@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome');
+
+        document.write(`Olá! <strong>${nome}</strong> !. <br>`); // formatação de strings
+        
+        document.write(`Seu nome tem ${nome.length} letras.<br>`);// formatação de strings
+
+        document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong> letras.`);// formatação de strings
+
+        // formatação de números usa tofixed(2) (número com 2 casas depois da vírgula)
+        // Ou usar n1.toFixed(2).repalce('.', ',') para trocar o pornto por vírgula decimal
+        // Também pode se usar o n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+
+    </script>
+</body>
+</html>

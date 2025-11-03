@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa...</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            color: black;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>olá mundo</h1>
+
+    <script>
+      
+     var n1 = Number.parseInt(window.prompt('digite um número')); // o comando window.prompt retorna uma string logo usa-se o number.parseInt para converter em number
+     var n2 = Number.parseInt(window.prompt('digite outro número')); // number(n) também pode ser usado mas Number.parseInt pode ser útil em situações específicas 
+     var n3 = n1 + n2
+    //  window.alert('A soma do valores é ' + n3);
+     window.alert(`A soma do valores é ${n3}` ); // poderia ter escrito desta forma com $
+
+    </script>
+</body>
+</html>

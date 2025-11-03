@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area{
+            background: green;
+            color: white;
+            font: normal 20pt arial;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- UMA FORMA COM O HTML NÃO TÃO LIMPO
+     <div id="area" onclick= "clicar()" onmouseenter="entrar()" onmouseout="sair()"> Interaja</div>
+    
+
+<script>
+    var a = window.document.getElementById('area')
+    function clicar(){
+        // var a = window.document.getElementById('area')
+        a.innerText = 'Clicou!'
+    }
+
+    function entrar(){
+       a.innerText = 'Entrou!'
+
+    }
+
+     function sair(){
+    a.innerText = 'Saiu!'
+    } -->
+
+    <!-- UMA FORMA MELHOR COM O O HTML MAIS LIMPO (USANDO AddEventListener) -->
+    <div id="area"> Interaja</div>
+    
+
+<script>
+    var a = window.document.getElementById('area')
+
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+
+
+    function clicar(){
+        // var a = window.document.getElementById('area')
+        a.innerText = 'Clicou!'
+        area.style.background = 'red'
+    }
+
+    function entrar(){
+       a.innerText = 'Entrou!'
+
+    }
+
+     function sair(){
+    a.innerText = 'Saiu!'
+     }
+</script>    
+</body>
+</html>
